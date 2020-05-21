@@ -1,0 +1,609 @@
+Iteration no: 1
+Running without Hyperthreading
+=== test run with 1 threads ===
+# started on Tue Feb 11 00:53:40 2020
+
+
+ Performance counter stats for './fluidanimate 1 20 in_500K.fluid out.fluid':
+
+   117,563,772,142      L1-dcache-loads                                             
+       190,794,363      L1-dcache-load-misses     #    0.16% of all L1-dcache hits  
+        30,057,095      LLC-loads                                                   
+        21,972,124      LLC-load-misses           #   73.10% of all LL-cache hits   
+
+      44.031196316 seconds time elapsed
+
+# started on Tue Feb 11 00:54:25 2020
+
+
+ Performance counter stats for './fluidanimate 1 20 in_500K.fluid out.fluid':
+
+   178,628,393,134      cpu-cycles                                                  
+   316,412,474,527      instructions              #    1.77  insn per cycle         
+        27,176,536      r2124                                                       
+        94,409,258      rE124                                                       
+
+      43.757285814 seconds time elapsed
+
+=== test run with 2 threads ===
+# started on Tue Feb 11 00:55:11 2020
+
+
+ Performance counter stats for './fluidanimate 2 20 in_500K.fluid out.fluid':
+
+   117,893,530,099      L1-dcache-loads                                             
+       199,394,842      L1-dcache-load-misses     #    0.17% of all L1-dcache hits  
+        33,573,210      LLC-loads                                                   
+        22,982,107      LLC-load-misses           #   68.45% of all LL-cache hits   
+
+      22.897764188 seconds time elapsed
+
+# started on Tue Feb 11 00:55:38 2020
+
+
+ Performance counter stats for './fluidanimate 2 20 in_500K.fluid out.fluid':
+
+   180,698,332,754      cpu-cycles                                                  
+   317,709,638,344      instructions              #    1.76  insn per cycle         
+        30,877,913      r2124                                                       
+        98,609,458      rE124                                                       
+
+      22.875829510 seconds time elapsed
+
+=== test run with 4 threads ===
+# started on Tue Feb 11 00:56:03 2020
+
+
+ Performance counter stats for './fluidanimate 4 20 in_500K.fluid out.fluid':
+
+   118,244,543,220      L1-dcache-loads                                             
+       204,729,728      L1-dcache-load-misses     #    0.17% of all L1-dcache hits  
+        34,804,252      LLC-loads                                                   
+        24,477,993      LLC-load-misses           #   70.33% of all LL-cache hits   
+
+      11.893888954 seconds time elapsed
+
+# started on Tue Feb 11 00:56:17 2020
+
+
+ Performance counter stats for './fluidanimate 4 20 in_500K.fluid out.fluid':
+
+   181,946,632,995      cpu-cycles                                                  
+   319,076,037,371      instructions              #    1.75  insn per cycle         
+        31,684,743      r2124                                                       
+       100,357,034      rE124                                                       
+
+      11.886104843 seconds time elapsed
+
+=== test run with 8 threads ===
+# started on Tue Feb 11 00:56:31 2020
+
+
+ Performance counter stats for './fluidanimate 8 20 in_500K.fluid out.fluid':
+
+   118,936,979,744      L1-dcache-loads                                             
+       201,138,401      L1-dcache-load-misses     #    0.17% of all L1-dcache hits  
+        39,917,178      LLC-loads                                                   
+        26,319,137      LLC-load-misses           #   65.93% of all LL-cache hits   
+
+       6.478308960 seconds time elapsed
+
+# started on Tue Feb 11 00:56:40 2020
+
+
+ Performance counter stats for './fluidanimate 8 20 in_500K.fluid out.fluid':
+
+   185,649,946,545      cpu-cycles                                                  
+   321,798,397,283      instructions              #    1.73  insn per cycle         
+        36,887,098      r2124                                                       
+        93,418,143      rE124                                                       
+
+       6.490029965 seconds time elapsed
+
+Running with Hyperthreading
+=== test run with 2 threads ===
+# started on Tue Feb 11 00:56:48 2020
+
+
+ Performance counter stats for './fluidanimate 2 20 in_500K.fluid out.fluid':
+
+   117,900,704,632      L1-dcache-loads                                             
+       223,108,773      L1-dcache-load-misses     #    0.19% of all L1-dcache hits  
+        32,982,633      LLC-loads                                                   
+        23,399,314      LLC-load-misses           #   70.94% of all LL-cache hits   
+
+      29.792592782 seconds time elapsed
+
+# started on Tue Feb 11 00:57:20 2020
+
+
+ Performance counter stats for './fluidanimate 2 20 in_500K.fluid out.fluid':
+
+   239,838,139,904      cpu-cycles                                                  
+   317,737,858,423      instructions              #    1.32  insn per cycle         
+        30,895,456      r2124                                                       
+       108,390,089      rE124                                                       
+
+      29.803660703 seconds time elapsed
+
+=== test run with 4 threads ===
+# started on Tue Feb 11 00:57:53 2020
+
+
+ Performance counter stats for './fluidanimate 4 20 in_500K.fluid out.fluid':
+
+   118,250,584,011      L1-dcache-loads                                             
+       227,690,987      L1-dcache-load-misses     #    0.19% of all L1-dcache hits  
+        34,140,738      LLC-loads                                                   
+        25,238,601      LLC-load-misses           #   73.93% of all LL-cache hits   
+
+      15.474745353 seconds time elapsed
+
+# started on Tue Feb 11 00:58:10 2020
+
+
+ Performance counter stats for './fluidanimate 4 20 in_500K.fluid out.fluid':
+
+   241,402,221,226      cpu-cycles                                                  
+   319,110,846,396      instructions              #    1.32  insn per cycle         
+        31,514,675      r2124                                                       
+       110,793,303      rE124                                                       
+
+      15.483830635 seconds time elapsed
+
+=== test run with 8 threads ===
+# started on Tue Feb 11 00:58:29 2020
+
+
+ Performance counter stats for './fluidanimate 8 20 in_500K.fluid out.fluid':
+
+   118,943,744,207      L1-dcache-loads                                             
+       255,640,286      L1-dcache-load-misses     #    0.21% of all L1-dcache hits  
+        45,012,839      LLC-loads                                                   
+        27,397,771      LLC-load-misses           #   60.87% of all LL-cache hits   
+
+       8.445135802 seconds time elapsed
+
+# started on Tue Feb 11 00:58:40 2020
+
+
+ Performance counter stats for './fluidanimate 8 20 in_500K.fluid out.fluid':
+
+   245,718,418,091      cpu-cycles                                                  
+   321,814,494,720      instructions              #    1.31  insn per cycle         
+        41,670,983      r2124                                                       
+       121,153,716      rE124                                                       
+
+       8.394768357 seconds time elapsed
+
+=== test run with 16 threads ===
+# started on Tue Feb 11 00:58:52 2020
+
+
+ Performance counter stats for './fluidanimate 16 20 in_500K.fluid out.fluid':
+
+   119,671,541,674      L1-dcache-loads                                             
+       268,143,579      L1-dcache-load-misses     #    0.22% of all L1-dcache hits  
+        48,150,642      LLC-loads                                                   
+        30,399,408      LLC-load-misses           #   63.13% of all LL-cache hits   
+
+       4.695458304 seconds time elapsed
+
+# started on Tue Feb 11 00:59:00 2020
+
+
+ Performance counter stats for './fluidanimate 16 20 in_500K.fluid out.fluid':
+
+   249,258,772,705      cpu-cycles                                                  
+   324,735,605,668      instructions              #    1.30  insn per cycle         
+        45,483,907      r2124                                                       
+       128,676,149      rE124                                                       
+
+       4.666637007 seconds time elapsed
+
+Iteration no: 2
+Running without Hyperthreading
+=== test run with 1 threads ===
+# started on Tue Feb 11 00:59:07 2020
+
+
+ Performance counter stats for './fluidanimate 1 20 in_500K.fluid out.fluid':
+
+   117,562,569,203      L1-dcache-loads                                             
+       190,648,244      L1-dcache-load-misses     #    0.16% of all L1-dcache hits  
+        30,009,094      LLC-loads                                                   
+        21,977,496      LLC-load-misses           #   73.24% of all LL-cache hits   
+
+      43.878996265 seconds time elapsed
+
+# started on Tue Feb 11 00:59:52 2020
+
+
+ Performance counter stats for './fluidanimate 1 20 in_500K.fluid out.fluid':
+
+   178,776,016,285      cpu-cycles                                                  
+   316,410,964,980      instructions              #    1.77  insn per cycle         
+        27,142,083      r2124                                                       
+        94,410,153      rE124                                                       
+
+      43.863299651 seconds time elapsed
+
+=== test run with 2 threads ===
+# started on Tue Feb 11 01:00:38 2020
+
+
+ Performance counter stats for './fluidanimate 2 20 in_500K.fluid out.fluid':
+
+   117,894,618,406      L1-dcache-loads                                             
+       199,536,881      L1-dcache-load-misses     #    0.17% of all L1-dcache hits  
+        33,615,279      LLC-loads                                                   
+        23,013,254      LLC-load-misses           #   68.46% of all LL-cache hits   
+
+      22.900964244 seconds time elapsed
+
+# started on Tue Feb 11 01:01:04 2020
+
+
+ Performance counter stats for './fluidanimate 2 20 in_500K.fluid out.fluid':
+
+   181,531,973,298      cpu-cycles                                                  
+   317,712,467,902      instructions              #    1.75  insn per cycle         
+        31,142,758      r2124                                                       
+        99,505,699      rE124                                                       
+
+      23.177935676 seconds time elapsed
+
+=== test run with 4 threads ===
+# started on Tue Feb 11 01:01:30 2020
+
+
+ Performance counter stats for './fluidanimate 4 20 in_500K.fluid out.fluid':
+
+   118,245,092,844      L1-dcache-loads                                             
+       207,473,761      L1-dcache-load-misses     #    0.18% of all L1-dcache hits  
+        34,732,156      LLC-loads                                                   
+        24,504,418      LLC-load-misses           #   70.55% of all LL-cache hits   
+
+      12.192823527 seconds time elapsed
+
+# started on Tue Feb 11 01:01:44 2020
+
+
+ Performance counter stats for './fluidanimate 4 20 in_500K.fluid out.fluid':
+
+   182,009,013,603      cpu-cycles                                                  
+   319,101,558,914      instructions              #    1.75  insn per cycle         
+        31,756,974      r2124                                                       
+       100,569,822      rE124                                                       
+
+      11.903070932 seconds time elapsed
+
+=== test run with 8 threads ===
+# started on Tue Feb 11 01:01:58 2020
+
+
+ Performance counter stats for './fluidanimate 8 20 in_500K.fluid out.fluid':
+
+   118,937,840,383      L1-dcache-loads                                             
+       200,756,769      L1-dcache-load-misses     #    0.17% of all L1-dcache hits  
+        39,787,093      LLC-loads                                                   
+        26,233,021      LLC-load-misses           #   65.93% of all LL-cache hits   
+
+       6.498532532 seconds time elapsed
+
+# started on Tue Feb 11 01:02:07 2020
+
+
+ Performance counter stats for './fluidanimate 8 20 in_500K.fluid out.fluid':
+
+   185,640,342,180      cpu-cycles                                                  
+   321,792,647,582      instructions              #    1.73  insn per cycle         
+        36,851,971      r2124                                                       
+        94,014,902      rE124                                                       
+
+       6.518179409 seconds time elapsed
+
+Running with Hyperthreading
+=== test run with 2 threads ===
+# started on Tue Feb 11 01:02:15 2020
+
+
+ Performance counter stats for './fluidanimate 2 20 in_500K.fluid out.fluid':
+
+   117,900,689,687      L1-dcache-loads                                             
+       221,680,321      L1-dcache-load-misses     #    0.19% of all L1-dcache hits  
+        33,235,918      LLC-loads                                                   
+        23,451,002      LLC-load-misses           #   70.56% of all LL-cache hits   
+
+      29.855633364 seconds time elapsed
+
+# started on Tue Feb 11 01:02:47 2020
+
+
+ Performance counter stats for './fluidanimate 2 20 in_500K.fluid out.fluid':
+
+   240,165,192,815      cpu-cycles                                                  
+   317,737,708,233      instructions              #    1.32  insn per cycle         
+        30,909,518      r2124                                                       
+       108,534,778      rE124                                                       
+
+      29.856397848 seconds time elapsed
+
+=== test run with 4 threads ===
+# started on Tue Feb 11 01:03:19 2020
+
+
+ Performance counter stats for './fluidanimate 4 20 in_500K.fluid out.fluid':
+
+   118,251,279,242      L1-dcache-loads                                             
+       228,646,924      L1-dcache-load-misses     #    0.19% of all L1-dcache hits  
+        34,553,331      LLC-loads                                                   
+        25,220,582      LLC-load-misses           #   72.99% of all LL-cache hits   
+
+      15.484201034 seconds time elapsed
+
+# started on Tue Feb 11 01:03:37 2020
+
+
+ Performance counter stats for './fluidanimate 4 20 in_500K.fluid out.fluid':
+
+   242,595,396,417      cpu-cycles                                                  
+   319,108,940,103      instructions              #    1.32  insn per cycle         
+        34,980,583      r2124                                                       
+       114,060,864      rE124                                                       
+
+      15.619945903 seconds time elapsed
+
+=== test run with 8 threads ===
+# started on Tue Feb 11 01:03:56 2020
+
+
+ Performance counter stats for './fluidanimate 8 20 in_500K.fluid out.fluid':
+
+   118,938,525,446      L1-dcache-loads                                             
+       252,697,367      L1-dcache-load-misses     #    0.21% of all L1-dcache hits  
+        43,718,097      LLC-loads                                                   
+        27,273,452      LLC-load-misses           #   62.38% of all LL-cache hits   
+
+       8.366931982 seconds time elapsed
+
+# started on Tue Feb 11 01:04:07 2020
+
+
+ Performance counter stats for './fluidanimate 8 20 in_500K.fluid out.fluid':
+
+   245,272,983,383      cpu-cycles                                                  
+   321,804,116,486      instructions              #    1.31  insn per cycle         
+        39,661,910      r2124                                                       
+       121,767,548      rE124                                                       
+
+       8.408787814 seconds time elapsed
+
+=== test run with 16 threads ===
+# started on Tue Feb 11 01:04:18 2020
+
+
+ Performance counter stats for './fluidanimate 16 20 in_500K.fluid out.fluid':
+
+   119,682,400,496      L1-dcache-loads                                             
+       266,895,137      L1-dcache-load-misses     #    0.22% of all L1-dcache hits  
+        47,143,907      LLC-loads                                                   
+        30,326,181      LLC-load-misses           #   64.33% of all LL-cache hits   
+
+       4.656416976 seconds time elapsed
+
+# started on Tue Feb 11 01:04:26 2020
+
+
+ Performance counter stats for './fluidanimate 16 20 in_500K.fluid out.fluid':
+
+   248,955,191,045      cpu-cycles                                                  
+   324,718,970,831      instructions              #    1.30  insn per cycle         
+        43,996,907      r2124                                                       
+       127,481,944      rE124                                                       
+
+       4.662505505 seconds time elapsed
+
+Iteration no: 3
+Running without Hyperthreading
+=== test run with 1 threads ===
+# started on Tue Feb 11 01:04:33 2020
+
+
+ Performance counter stats for './fluidanimate 1 20 in_500K.fluid out.fluid':
+
+   117,562,570,411      L1-dcache-loads                                             
+       190,966,327      L1-dcache-load-misses     #    0.16% of all L1-dcache hits  
+        30,140,631      LLC-loads                                                   
+        22,035,765      LLC-load-misses           #   73.11% of all LL-cache hits   
+
+      44.112981809 seconds time elapsed
+
+# started on Tue Feb 11 01:05:19 2020
+
+
+ Performance counter stats for './fluidanimate 1 20 in_500K.fluid out.fluid':
+
+   178,725,780,280      cpu-cycles                                                  
+   316,410,235,860      instructions              #    1.77  insn per cycle         
+        27,191,834      r2124                                                       
+        94,342,821      rE124                                                       
+
+      43.871541441 seconds time elapsed
+
+=== test run with 2 threads ===
+# started on Tue Feb 11 01:06:06 2020
+
+
+ Performance counter stats for './fluidanimate 2 20 in_500K.fluid out.fluid':
+
+   117,895,989,077      L1-dcache-loads                                             
+       199,396,720      L1-dcache-load-misses     #    0.17% of all L1-dcache hits  
+        33,659,790      LLC-loads                                                   
+        23,054,632      LLC-load-misses           #   68.49% of all LL-cache hits   
+
+      22.885203361 seconds time elapsed
+
+# started on Tue Feb 11 01:06:31 2020
+
+
+ Performance counter stats for './fluidanimate 2 20 in_500K.fluid out.fluid':
+
+   180,677,433,066      cpu-cycles                                                  
+   317,714,125,532      instructions              #    1.76  insn per cycle         
+        30,835,976      r2124                                                       
+        98,548,271      rE124                                                       
+
+      22.911208171 seconds time elapsed
+
+=== test run with 4 threads ===
+# started on Tue Feb 11 01:06:56 2020
+
+
+ Performance counter stats for './fluidanimate 4 20 in_500K.fluid out.fluid':
+
+   118,241,191,283      L1-dcache-loads                                             
+       204,886,403      L1-dcache-load-misses     #    0.17% of all L1-dcache hits  
+        34,734,895      LLC-loads                                                   
+        24,374,049      LLC-load-misses           #   70.17% of all LL-cache hits   
+
+      11.889830174 seconds time elapsed
+
+# started on Tue Feb 11 01:07:10 2020
+
+
+ Performance counter stats for './fluidanimate 4 20 in_500K.fluid out.fluid':
+
+   181,910,333,186      cpu-cycles                                                  
+   319,088,884,178      instructions              #    1.75  insn per cycle         
+        31,678,927      r2124                                                       
+       100,429,158      rE124                                                       
+
+      11.881866740 seconds time elapsed
+
+=== test run with 8 threads ===
+# started on Tue Feb 11 01:07:24 2020
+
+
+ Performance counter stats for './fluidanimate 8 20 in_500K.fluid out.fluid':
+
+   118,936,138,151      L1-dcache-loads                                             
+       201,446,503      L1-dcache-load-misses     #    0.17% of all L1-dcache hits  
+        40,049,998      LLC-loads                                                   
+        26,276,112      LLC-load-misses           #   65.61% of all LL-cache hits   
+
+       6.486081669 seconds time elapsed
+
+# started on Tue Feb 11 01:07:33 2020
+
+
+ Performance counter stats for './fluidanimate 8 20 in_500K.fluid out.fluid':
+
+   185,531,832,567      cpu-cycles                                                  
+   321,802,849,808      instructions              #    1.73  insn per cycle         
+        37,147,742      r2124                                                       
+        93,405,812      rE124                                                       
+
+       6.499886133 seconds time elapsed
+
+Running with Hyperthreading
+=== test run with 2 threads ===
+# started on Tue Feb 11 01:07:41 2020
+
+
+ Performance counter stats for './fluidanimate 2 20 in_500K.fluid out.fluid':
+
+   117,899,999,408      L1-dcache-loads                                             
+       221,933,577      L1-dcache-load-misses     #    0.19% of all L1-dcache hits  
+        33,239,651      LLC-loads                                                   
+        23,548,846      LLC-load-misses           #   70.85% of all LL-cache hits   
+
+      29.888826078 seconds time elapsed
+
+# started on Tue Feb 11 01:08:13 2020
+
+
+ Performance counter stats for './fluidanimate 2 20 in_500K.fluid out.fluid':
+
+   239,941,928,508      cpu-cycles                                                  
+   317,732,725,171      instructions              #    1.32  insn per cycle         
+        30,150,292      r2124                                                       
+       108,365,540      rE124                                                       
+
+      30.019105901 seconds time elapsed
+
+=== test run with 4 threads ===
+# started on Tue Feb 11 01:08:45 2020
+
+
+ Performance counter stats for './fluidanimate 4 20 in_500K.fluid out.fluid':
+
+   118,249,078,164      L1-dcache-loads                                             
+       233,627,920      L1-dcache-load-misses     #    0.20% of all L1-dcache hits  
+        37,098,055      LLC-loads                                                   
+        25,689,119      LLC-load-misses           #   69.25% of all LL-cache hits   
+
+      15.601748619 seconds time elapsed
+
+# started on Tue Feb 11 01:09:03 2020
+
+
+ Performance counter stats for './fluidanimate 4 20 in_500K.fluid out.fluid':
+
+   241,460,467,887      cpu-cycles                                                  
+   319,109,721,699      instructions              #    1.32  insn per cycle         
+        31,740,104      r2124                                                       
+       111,278,733      rE124                                                       
+
+      15.518350750 seconds time elapsed
+
+=== test run with 8 threads ===
+# started on Tue Feb 11 01:09:21 2020
+
+
+ Performance counter stats for './fluidanimate 8 20 in_500K.fluid out.fluid':
+
+   118,942,021,477      L1-dcache-loads                                             
+       252,032,287      L1-dcache-load-misses     #    0.21% of all L1-dcache hits  
+        44,332,643      LLC-loads                                                   
+        27,534,163      LLC-load-misses           #   62.11% of all LL-cache hits   
+
+       8.362020643 seconds time elapsed
+
+# started on Tue Feb 11 01:09:33 2020
+
+
+ Performance counter stats for './fluidanimate 8 20 in_500K.fluid out.fluid':
+
+   245,114,046,765      cpu-cycles                                                  
+   321,803,971,705      instructions              #    1.31  insn per cycle         
+        40,872,871      r2124                                                       
+       122,421,001      rE124                                                       
+
+       8.326873045 seconds time elapsed
+
+=== test run with 16 threads ===
+# started on Tue Feb 11 01:09:45 2020
+
+
+ Performance counter stats for './fluidanimate 16 20 in_500K.fluid out.fluid':
+
+   119,689,068,876      L1-dcache-loads                                             
+       269,652,773      L1-dcache-load-misses     #    0.23% of all L1-dcache hits  
+        48,419,480      LLC-loads                                                   
+        30,617,433      LLC-load-misses           #   63.23% of all LL-cache hits   
+
+       4.708243886 seconds time elapsed
+
+# started on Tue Feb 11 01:09:53 2020
+
+
+ Performance counter stats for './fluidanimate 16 20 in_500K.fluid out.fluid':
+
+   248,898,916,397      cpu-cycles                                                  
+   324,728,491,086      instructions              #    1.30  insn per cycle         
+        44,221,729      r2124                                                       
+       128,522,990      rE124                                                       
+
+       4.653690027 seconds time elapsed
+

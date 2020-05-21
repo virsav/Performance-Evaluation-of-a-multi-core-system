@@ -1,0 +1,801 @@
+Iteration no: 1
+Running without Hyperthreading
+=== test run with 1 threads ===
+# started on Tue Feb 11 00:54:09 2020
+
+
+ Performance counter stats for './bodytrack sequenceB_261 4 20 4000 5 2 1 4':
+
+   130,982,856,040      L1-dcache-loads                                             
+       627,459,766      L1-dcache-load-misses     #    0.48% of all L1-dcache hits  
+         1,739,349      LLC-loads                                                   
+           845,266      LLC-load-misses           #   48.60% of all LL-cache hits   
+
+      33.369410410 seconds time elapsed
+
+      33.304065000 seconds user
+       0.064000000 seconds sys
+
+
+# started on Tue Feb 11 00:54:44 2020
+
+
+ Performance counter stats for './bodytrack sequenceB_261 4 20 4000 5 2 1 4':
+
+   135,938,809,892      cpu-cycles                                                  
+   334,448,785,585      instructions              #    2.46  insn per cycle         
+         1,221,680      r2124                                                       
+       507,261,187      rE124                                                       
+
+      33.478619435 seconds time elapsed
+
+      33.441171000 seconds user
+       0.036001000 seconds sys
+
+
+=== test run with 2 threads ===
+# started on Tue Feb 11 00:55:21 2020
+
+
+ Performance counter stats for './bodytrack sequenceB_261 4 20 4000 5 2 2 4':
+
+   130,985,392,106      L1-dcache-loads                                             
+       637,146,623      L1-dcache-load-misses     #    0.49% of all L1-dcache hits  
+         6,092,535      LLC-loads                                                   
+           925,335      LLC-load-misses           #   15.19% of all LL-cache hits   
+
+      17.630444967 seconds time elapsed
+
+      34.250314000 seconds user
+       0.056062000 seconds sys
+
+
+# started on Tue Feb 11 00:55:43 2020
+
+
+ Performance counter stats for './bodytrack sequenceB_261 4 20 4000 5 2 2 4':
+
+   137,037,608,585      cpu-cycles                                                  
+   334,460,174,730      instructions              #    2.44  insn per cycle         
+         5,701,626      r2124                                                       
+       510,070,091      rE124                                                       
+
+      17.558384055 seconds time elapsed
+
+      34.131378000 seconds user
+       0.044071000 seconds sys
+
+
+=== test run with 4 threads ===
+# started on Tue Feb 11 00:56:03 2020
+
+
+ Performance counter stats for './bodytrack sequenceB_261 4 20 4000 5 2 4 4':
+
+   130,993,882,140      L1-dcache-loads                                             
+       638,374,883      L1-dcache-load-misses     #    0.49% of all L1-dcache hits  
+         7,874,193      LLC-loads                                                   
+           900,641      LLC-load-misses           #   11.44% of all LL-cache hits   
+
+       9.440872326 seconds time elapsed
+
+      34.847291000 seconds user
+       0.096307000 seconds sys
+
+
+# started on Tue Feb 11 00:56:15 2020
+
+
+ Performance counter stats for './bodytrack sequenceB_261 4 20 4000 5 2 4 4':
+
+   137,126,235,704      cpu-cycles                                                  
+   334,491,258,909      instructions              #    2.44  insn per cycle         
+         7,409,956      r2124                                                       
+       511,264,348      rE124                                                       
+
+       9.479508605 seconds time elapsed
+
+      34.940047000 seconds user
+       0.087949000 seconds sys
+
+
+=== test run with 8 threads ===
+# started on Tue Feb 11 00:56:28 2020
+
+
+ Performance counter stats for './bodytrack sequenceB_261 4 20 4000 5 2 8 4':
+
+   131,008,309,719      L1-dcache-loads                                             
+       657,274,466      L1-dcache-load-misses     #    0.50% of all L1-dcache hits  
+        22,603,290      LLC-loads                                                   
+           882,337      LLC-load-misses           #    3.90% of all LL-cache hits   
+
+       5.406093584 seconds time elapsed
+
+      36.317231000 seconds user
+       0.152475000 seconds sys
+
+
+# started on Tue Feb 11 00:56:37 2020
+
+
+ Performance counter stats for './bodytrack sequenceB_261 4 20 4000 5 2 8 4':
+
+   138,623,329,782      cpu-cycles                                                  
+   334,544,423,183      instructions              #    2.41  insn per cycle         
+        21,445,233      r2124                                                       
+       520,999,556      rE124                                                       
+
+       5.417069807 seconds time elapsed
+
+      36.502497000 seconds user
+       0.080225000 seconds sys
+
+
+Running with Hyperthreading
+=== test run with 2 threads ===
+# started on Tue Feb 11 00:56:44 2020
+
+
+ Performance counter stats for './bodytrack sequenceB_261 4 20 4000 5 2 2 4':
+
+   130,993,285,742      L1-dcache-loads                                             
+       577,445,457      L1-dcache-load-misses     #    0.44% of all L1-dcache hits  
+         2,067,879      LLC-loads                                                   
+           903,732      LLC-load-misses           #   43.70% of all LL-cache hits   
+
+      28.510131077 seconds time elapsed
+
+      56.000490000 seconds user
+       0.064037000 seconds sys
+
+
+# started on Tue Feb 11 00:57:14 2020
+
+
+ Performance counter stats for './bodytrack sequenceB_261 4 20 4000 5 2 2 4':
+
+   228,062,648,014      cpu-cycles                                                  
+   334,485,519,890      instructions              #    1.47  insn per cycle         
+         1,451,851      r2124                                                       
+       468,549,095      rE124                                                       
+
+      28.486672669 seconds time elapsed
+
+      55.975169000 seconds user
+       0.036014000 seconds sys
+
+
+=== test run with 4 threads ===
+# started on Tue Feb 11 00:57:45 2020
+
+
+ Performance counter stats for './bodytrack sequenceB_261 4 20 4000 5 2 4 4':
+
+   131,002,653,256      L1-dcache-loads                                             
+       567,234,552      L1-dcache-load-misses     #    0.43% of all L1-dcache hits  
+         5,530,946      LLC-loads                                                   
+           926,909      LLC-load-misses           #   16.76% of all LL-cache hits   
+
+      14.984729989 seconds time elapsed
+
+      56.973169000 seconds user
+       0.051979000 seconds sys
+
+
+# started on Tue Feb 11 00:58:03 2020
+
+
+ Performance counter stats for './bodytrack sequenceB_261 4 20 4000 5 2 4 4':
+
+   229,563,102,507      cpu-cycles                                                  
+   334,521,848,548      instructions              #    1.46  insn per cycle         
+         4,769,130      r2124                                                       
+       457,870,231      rE124                                                       
+
+      14.940767496 seconds time elapsed
+
+      56.796755000 seconds user
+       0.087964000 seconds sys
+
+
+=== test run with 8 threads ===
+# started on Tue Feb 11 00:58:21 2020
+
+
+ Performance counter stats for './bodytrack sequenceB_261 4 20 4000 5 2 8 4':
+
+   131,016,699,911      L1-dcache-loads                                             
+       565,046,769      L1-dcache-load-misses     #    0.43% of all L1-dcache hits  
+        14,778,320      LLC-loads                                                   
+           906,092      LLC-load-misses           #    6.13% of all LL-cache hits   
+
+       8.287834853 seconds time elapsed
+
+      58.981697000 seconds user
+       0.168691000 seconds sys
+
+
+# started on Tue Feb 11 00:58:32 2020
+
+
+ Performance counter stats for './bodytrack sequenceB_261 4 20 4000 5 2 8 4':
+
+   231,809,340,286      cpu-cycles                                                  
+   334,576,359,894      instructions              #    1.44  insn per cycle         
+        14,078,380      r2124                                                       
+       448,655,339      rE124                                                       
+
+       8.274951762 seconds time elapsed
+
+      59.079401000 seconds user
+       0.179633000 seconds sys
+
+
+=== test run with 16 threads ===
+# started on Tue Feb 11 00:58:44 2020
+
+
+ Performance counter stats for './bodytrack sequenceB_261 4 20 4000 5 2 16 4':
+
+   131,044,177,661      L1-dcache-loads                                             
+       579,940,360      L1-dcache-load-misses     #    0.44% of all L1-dcache hits  
+        15,476,518      LLC-loads                                                   
+           921,380      LLC-load-misses           #    5.95% of all LL-cache hits   
+
+       4.775598195 seconds time elapsed
+
+      60.617347000 seconds user
+       0.343780000 seconds sys
+
+
+# started on Tue Feb 11 00:58:52 2020
+
+
+ Performance counter stats for './bodytrack sequenceB_261 4 20 4000 5 2 16 4':
+
+   230,585,483,043      cpu-cycles                                                  
+   334,675,197,296      instructions              #    1.45  insn per cycle         
+        13,951,313      r2124                                                       
+       460,129,668      rE124                                                       
+
+       4.804276419 seconds time elapsed
+
+      61.197740000 seconds user
+       0.184657000 seconds sys
+
+
+Iteration no: 2
+Running without Hyperthreading
+=== test run with 1 threads ===
+# started on Tue Feb 11 00:58:59 2020
+
+
+ Performance counter stats for './bodytrack sequenceB_261 4 20 4000 5 2 1 4':
+
+   130,982,834,326      L1-dcache-loads                                             
+       627,465,419      L1-dcache-load-misses     #    0.48% of all L1-dcache hits  
+         1,725,524      LLC-loads                                                   
+           804,772      LLC-load-misses           #   46.64% of all LL-cache hits   
+
+      33.382972535 seconds time elapsed
+
+      33.329868000 seconds user
+       0.052002000 seconds sys
+
+
+# started on Tue Feb 11 00:59:34 2020
+
+
+ Performance counter stats for './bodytrack sequenceB_261 4 20 4000 5 2 1 4':
+
+   135,872,808,460      cpu-cycles                                                  
+   334,448,573,408      instructions              #    2.46  insn per cycle         
+         1,175,768      r2124                                                       
+       506,810,813      rE124                                                       
+
+      33.355742762 seconds time elapsed
+
+      33.314616000 seconds user
+       0.039998000 seconds sys
+
+
+=== test run with 2 threads ===
+# started on Tue Feb 11 01:00:11 2020
+
+
+ Performance counter stats for './bodytrack sequenceB_261 4 20 4000 5 2 2 4':
+
+   130,985,561,036      L1-dcache-loads                                             
+       636,410,547      L1-dcache-load-misses     #    0.49% of all L1-dcache hits  
+         6,471,712      LLC-loads                                                   
+           791,594      LLC-load-misses           #   12.23% of all LL-cache hits   
+
+      17.523450543 seconds time elapsed
+
+      34.066583000 seconds user
+       0.043987000 seconds sys
+
+
+# started on Tue Feb 11 01:00:31 2020
+
+
+ Performance counter stats for './bodytrack sequenceB_261 4 20 4000 5 2 2 4':
+
+   136,823,874,607      cpu-cycles                                                  
+   334,460,296,798      instructions              #    2.44  insn per cycle         
+         5,256,787      r2124                                                       
+       509,246,833      rE124                                                       
+
+      17.529280062 seconds time elapsed
+
+      34.073577000 seconds user
+       0.040025000 seconds sys
+
+
+=== test run with 4 threads ===
+# started on Tue Feb 11 01:00:52 2020
+
+
+ Performance counter stats for './bodytrack sequenceB_261 4 20 4000 5 2 4 4':
+
+   130,993,940,542      L1-dcache-loads                                             
+       638,767,955      L1-dcache-load-misses     #    0.49% of all L1-dcache hits  
+         8,119,742      LLC-loads                                                   
+           832,828      LLC-load-misses           #   10.26% of all LL-cache hits   
+
+       9.446559370 seconds time elapsed
+
+      34.866863000 seconds user
+       0.064137000 seconds sys
+
+
+# started on Tue Feb 11 01:01:04 2020
+
+
+ Performance counter stats for './bodytrack sequenceB_261 4 20 4000 5 2 4 4':
+
+   137,047,918,295      cpu-cycles                                                  
+   334,491,167,689      instructions              #    2.44  insn per cycle         
+         7,710,323      r2124                                                       
+       511,830,909      rE124                                                       
+
+       9.447423687 seconds time elapsed
+
+      34.865088000 seconds user
+       0.072101000 seconds sys
+
+
+=== test run with 8 threads ===
+# started on Tue Feb 11 01:01:17 2020
+
+
+ Performance counter stats for './bodytrack sequenceB_261 4 20 4000 5 2 8 4':
+
+   131,007,953,530      L1-dcache-loads                                             
+       656,176,974      L1-dcache-load-misses     #    0.50% of all L1-dcache hits  
+        22,095,677      LLC-loads                                                   
+           822,809      LLC-load-misses           #    3.72% of all LL-cache hits   
+
+       5.388216714 seconds time elapsed
+
+      36.209502000 seconds user
+       0.139466000 seconds sys
+
+
+# started on Tue Feb 11 01:01:26 2020
+
+
+ Performance counter stats for './bodytrack sequenceB_261 4 20 4000 5 2 8 4':
+
+   138,300,370,686      cpu-cycles                                                  
+   334,544,193,674      instructions              #    2.42  insn per cycle         
+        20,172,951      r2124                                                       
+       520,481,518      rE124                                                       
+
+       5.395859987 seconds time elapsed
+
+      36.330772000 seconds user
+       0.055862000 seconds sys
+
+
+Running with Hyperthreading
+=== test run with 2 threads ===
+# started on Tue Feb 11 01:01:34 2020
+
+
+ Performance counter stats for './bodytrack sequenceB_261 4 20 4000 5 2 2 4':
+
+   130,993,335,848      L1-dcache-loads                                             
+       573,952,057      L1-dcache-load-misses     #    0.44% of all L1-dcache hits  
+         2,076,145      LLC-loads                                                   
+           815,131      LLC-load-misses           #   39.26% of all LL-cache hits   
+
+      28.502312472 seconds time elapsed
+
+      55.999098000 seconds user
+       0.055995000 seconds sys
+
+
+# started on Tue Feb 11 01:02:04 2020
+
+
+ Performance counter stats for './bodytrack sequenceB_261 4 20 4000 5 2 2 4':
+
+   228,326,557,524      cpu-cycles                                                  
+   334,486,406,587      instructions              #    1.46  insn per cycle         
+         1,534,892      r2124                                                       
+       466,019,682      rE124                                                       
+
+      28.493195422 seconds time elapsed
+
+      55.988664000 seconds user
+       0.036023000 seconds sys
+
+
+=== test run with 4 threads ===
+# started on Tue Feb 11 01:02:36 2020
+
+
+ Performance counter stats for './bodytrack sequenceB_261 4 20 4000 5 2 4 4':
+
+   131,002,392,533      L1-dcache-loads                                             
+       570,297,449      L1-dcache-load-misses     #    0.44% of all L1-dcache hits  
+         5,560,067      LLC-loads                                                   
+           839,876      LLC-load-misses           #   15.11% of all LL-cache hits   
+
+      14.917671864 seconds time elapsed
+
+      56.614980000 seconds user
+       0.072120000 seconds sys
+
+
+# started on Tue Feb 11 01:02:53 2020
+
+
+ Performance counter stats for './bodytrack sequenceB_261 4 20 4000 5 2 4 4':
+
+   229,149,144,271      cpu-cycles                                                  
+   334,520,474,299      instructions              #    1.46  insn per cycle         
+         4,548,625      r2124                                                       
+       461,589,767      rE124                                                       
+
+      14.892497240 seconds time elapsed
+
+      56.622180000 seconds user
+       0.084044000 seconds sys
+
+
+=== test run with 8 threads ===
+# started on Tue Feb 11 01:03:11 2020
+
+
+ Performance counter stats for './bodytrack sequenceB_261 4 20 4000 5 2 8 4':
+
+   131,016,545,293      L1-dcache-loads                                             
+       566,074,024      L1-dcache-load-misses     #    0.43% of all L1-dcache hits  
+        14,791,430      LLC-loads                                                   
+           809,947      LLC-load-misses           #    5.48% of all LL-cache hits   
+
+       8.254716581 seconds time elapsed
+
+      59.049826000 seconds user
+       0.103638000 seconds sys
+
+
+# started on Tue Feb 11 01:03:23 2020
+
+
+ Performance counter stats for './bodytrack sequenceB_261 4 20 4000 5 2 8 4':
+
+   231,346,073,762      cpu-cycles                                                  
+   334,575,355,889      instructions              #    1.45  insn per cycle         
+        14,192,535      r2124                                                       
+       447,609,750      rE124                                                       
+
+       8.258658409 seconds time elapsed
+
+      58.964726000 seconds user
+       0.132019000 seconds sys
+
+
+=== test run with 16 threads ===
+# started on Tue Feb 11 01:03:36 2020
+
+
+ Performance counter stats for './bodytrack sequenceB_261 4 20 4000 5 2 16 4':
+
+   131,044,177,421      L1-dcache-loads                                             
+       576,755,501      L1-dcache-load-misses     #    0.44% of all L1-dcache hits  
+        15,143,975      LLC-loads                                                   
+           829,166      LLC-load-misses           #    5.48% of all LL-cache hits   
+
+       4.767205030 seconds time elapsed
+
+      60.741950000 seconds user
+       0.170578000 seconds sys
+
+
+# started on Tue Feb 11 01:03:43 2020
+
+
+ Performance counter stats for './bodytrack sequenceB_261 4 20 4000 5 2 16 4':
+
+   229,956,281,311      cpu-cycles                                                  
+   334,678,696,463      instructions              #    1.46  insn per cycle         
+        13,809,380      r2124                                                       
+       460,652,946      rE124                                                       
+
+       4.761943499 seconds time elapsed
+
+      60.543637000 seconds user
+       0.294547000 seconds sys
+
+
+Iteration no: 3
+Running without Hyperthreading
+=== test run with 1 threads ===
+# started on Tue Feb 11 01:03:50 2020
+
+
+ Performance counter stats for './bodytrack sequenceB_261 4 20 4000 5 2 1 4':
+
+   130,982,945,404      L1-dcache-loads                                             
+       627,202,324      L1-dcache-load-misses     #    0.48% of all L1-dcache hits  
+         1,734,411      LLC-loads                                                   
+           781,325      LLC-load-misses           #   45.05% of all LL-cache hits   
+
+      33.334640770 seconds time elapsed
+
+      33.297453000 seconds user
+       0.036001000 seconds sys
+
+
+# started on Tue Feb 11 01:04:25 2020
+
+
+ Performance counter stats for './bodytrack sequenceB_261 4 20 4000 5 2 1 4':
+
+   135,860,574,943      cpu-cycles                                                  
+   334,448,716,816      instructions              #    2.46  insn per cycle         
+         1,190,169      r2124                                                       
+       506,392,207      rE124                                                       
+
+      33.340361243 seconds time elapsed
+
+      33.310455000 seconds user
+       0.027998000 seconds sys
+
+
+=== test run with 2 threads ===
+# started on Tue Feb 11 01:05:01 2020
+
+
+ Performance counter stats for './bodytrack sequenceB_261 4 20 4000 5 2 2 4':
+
+   130,985,830,017      L1-dcache-loads                                             
+       637,468,431      L1-dcache-load-misses     #    0.49% of all L1-dcache hits  
+         6,190,614      LLC-loads                                                   
+           775,236      LLC-load-misses           #   12.52% of all LL-cache hits   
+
+      17.542250750 seconds time elapsed
+
+      34.076237000 seconds user
+       0.043989000 seconds sys
+
+
+# started on Tue Feb 11 01:05:20 2020
+
+
+ Performance counter stats for './bodytrack sequenceB_261 4 20 4000 5 2 2 4':
+
+   136,802,639,681      cpu-cycles                                                  
+   334,460,695,585      instructions              #    2.44  insn per cycle         
+         5,266,215      r2124                                                       
+       509,017,230      rE124                                                       
+
+      17.509557168 seconds time elapsed
+
+      34.053721000 seconds user
+       0.024029000 seconds sys
+
+
+=== test run with 4 threads ===
+# started on Tue Feb 11 01:05:40 2020
+
+
+ Performance counter stats for './bodytrack sequenceB_261 4 20 4000 5 2 4 4':
+
+   130,993,848,460      L1-dcache-loads                                             
+       638,653,603      L1-dcache-load-misses     #    0.49% of all L1-dcache hits  
+         8,065,489      LLC-loads                                                   
+           778,266      LLC-load-misses           #    9.65% of all LL-cache hits   
+
+       9.467902275 seconds time elapsed
+
+      34.974583000 seconds user
+       0.059970000 seconds sys
+
+
+# started on Tue Feb 11 01:05:51 2020
+
+
+ Performance counter stats for './bodytrack sequenceB_261 4 20 4000 5 2 4 4':
+
+   137,022,296,288      cpu-cycles                                                  
+   334,491,397,415      instructions              #    2.44  insn per cycle         
+         7,056,480      r2124                                                       
+       510,341,700      rE124                                                       
+
+       9.437800495 seconds time elapsed
+
+      34.828890000 seconds user
+       0.076141000 seconds sys
+
+
+=== test run with 8 threads ===
+# started on Tue Feb 11 01:06:05 2020
+
+
+ Performance counter stats for './bodytrack sequenceB_261 4 20 4000 5 2 8 4':
+
+   131,008,032,207      L1-dcache-loads                                             
+       657,196,298      L1-dcache-load-misses     #    0.50% of all L1-dcache hits  
+        23,335,785      LLC-loads                                                   
+           783,077      LLC-load-misses           #    3.36% of all LL-cache hits   
+
+       5.385808858 seconds time elapsed
+
+      36.225747000 seconds user
+       0.155406000 seconds sys
+
+
+# started on Tue Feb 11 01:06:13 2020
+
+
+ Performance counter stats for './bodytrack sequenceB_261 4 20 4000 5 2 8 4':
+
+   138,307,471,366      cpu-cycles                                                  
+   334,543,931,550      instructions              #    2.42  insn per cycle         
+        20,371,012      r2124                                                       
+       520,735,152      rE124                                                       
+
+       5.384272544 seconds time elapsed
+
+      36.198165000 seconds user
+       0.120915000 seconds sys
+
+
+Running with Hyperthreading
+=== test run with 2 threads ===
+# started on Tue Feb 11 01:06:20 2020
+
+
+ Performance counter stats for './bodytrack sequenceB_261 4 20 4000 5 2 2 4':
+
+   130,993,341,383      L1-dcache-loads                                             
+       579,325,157      L1-dcache-load-misses     #    0.44% of all L1-dcache hits  
+         2,047,301      LLC-loads                                                   
+           782,236      LLC-load-misses           #   38.21% of all LL-cache hits   
+
+      28.449236512 seconds time elapsed
+
+      55.894234000 seconds user
+       0.072008000 seconds sys
+
+
+# started on Tue Feb 11 01:06:50 2020
+
+
+ Performance counter stats for './bodytrack sequenceB_261 4 20 4000 5 2 2 4':
+
+   228,323,400,190      cpu-cycles                                                  
+   334,485,552,983      instructions              #    1.46  insn per cycle         
+         1,442,178      r2124                                                       
+       468,562,274      rE124                                                       
+
+      28.483767169 seconds time elapsed
+
+      55.982856000 seconds user
+       0.036001000 seconds sys
+
+
+=== test run with 4 threads ===
+# started on Tue Feb 11 01:07:21 2020
+
+
+ Performance counter stats for './bodytrack sequenceB_261 4 20 4000 5 2 4 4':
+
+   131,002,351,933      L1-dcache-loads                                             
+       572,090,015      L1-dcache-load-misses     #    0.44% of all L1-dcache hits  
+         5,250,024      LLC-loads                                                   
+           799,783      LLC-load-misses           #   15.23% of all LL-cache hits   
+
+      14.894164050 seconds time elapsed
+
+      56.645697000 seconds user
+       0.076109000 seconds sys
+
+
+# started on Tue Feb 11 01:07:38 2020
+
+
+ Performance counter stats for './bodytrack sequenceB_261 4 20 4000 5 2 4 4':
+
+   229,515,340,569      cpu-cycles                                                  
+   334,519,998,565      instructions              #    1.46  insn per cycle         
+         4,561,099      r2124                                                       
+       456,520,750      rE124                                                       
+
+      14.907455786 seconds time elapsed
+
+      56.658194000 seconds user
+       0.068195000 seconds sys
+
+
+=== test run with 8 threads ===
+# started on Tue Feb 11 01:07:57 2020
+
+
+ Performance counter stats for './bodytrack sequenceB_261 4 20 4000 5 2 8 4':
+
+   131,016,837,596      L1-dcache-loads                                             
+       568,951,336      L1-dcache-load-misses     #    0.43% of all L1-dcache hits  
+        15,146,952      LLC-loads                                                   
+           843,555      LLC-load-misses           #    5.57% of all LL-cache hits   
+
+       8.240637631 seconds time elapsed
+
+      58.938678000 seconds user
+       0.127953000 seconds sys
+
+
+# started on Tue Feb 11 01:08:09 2020
+
+
+ Performance counter stats for './bodytrack sequenceB_261 4 20 4000 5 2 8 4':
+
+   230,991,166,059      cpu-cycles                                                  
+   334,573,146,366      instructions              #    1.45  insn per cycle         
+        13,659,385      r2124                                                       
+       448,198,539      rE124                                                       
+
+       8.270898581 seconds time elapsed
+
+      58.970171000 seconds user
+       0.156037000 seconds sys
+
+
+=== test run with 16 threads ===
+# started on Tue Feb 11 01:08:21 2020
+
+
+ Performance counter stats for './bodytrack sequenceB_261 4 20 4000 5 2 16 4':
+
+   131,044,547,509      L1-dcache-loads                                             
+       580,007,719      L1-dcache-load-misses     #    0.44% of all L1-dcache hits  
+        15,139,236      LLC-loads                                                   
+           843,633      LLC-load-misses           #    5.57% of all LL-cache hits   
+
+       4.765587902 seconds time elapsed
+
+      60.789250000 seconds user
+       0.183713000 seconds sys
+
+
+# started on Tue Feb 11 01:08:28 2020
+
+
+ Performance counter stats for './bodytrack sequenceB_261 4 20 4000 5 2 16 4':
+
+   230,599,287,148      cpu-cycles                                                  
+   334,677,159,198      instructions              #    1.45  insn per cycle         
+        13,977,931      r2124                                                       
+       457,872,160      rE124                                                       
+
+       4.779143101 seconds time elapsed
+
+      60.830037000 seconds user
+       0.278343000 seconds sys
+
+

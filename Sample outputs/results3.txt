@@ -1,0 +1,609 @@
+Iteration no: 1
+Running without Hyperthreading
+=== test run with 1 threads ===
+# started on Tue Feb 11 00:53:08 2020
+
+
+ Performance counter stats for './h264dec -i ./park_joy_2160p.h264 -t 1':
+
+   188,889,048,945      L1-dcache-loads                                             
+     1,716,157,495      L1-dcache-load-misses     #    0.91% of all L1-dcache hits  
+       208,310,859      LLC-loads                                                   
+       171,332,662      LLC-load-misses           #   82.25% of all LL-cache hits   
+
+      69.271359742 seconds time elapsed
+
+# started on Tue Feb 11 00:54:19 2020
+
+
+ Performance counter stats for './h264dec -i ./park_joy_2160p.h264 -t 1':
+
+   282,635,278,373      cpu-cycles                                                  
+   492,913,530,211      instructions              #    1.74  insn per cycle         
+       206,125,888      r2124                                                       
+       838,751,718      rE124                                                       
+
+      69.221771763 seconds time elapsed
+
+=== test run with 2 threads ===
+# started on Tue Feb 11 00:55:31 2020
+
+
+ Performance counter stats for './h264dec -i ./park_joy_2160p.h264 -t 2':
+
+   192,177,298,222      L1-dcache-loads                                             
+     1,766,483,226      L1-dcache-load-misses     #    0.92% of all L1-dcache hits  
+       253,115,510      LLC-loads                                                   
+       177,799,908      LLC-load-misses           #   70.24% of all LL-cache hits   
+
+      37.143795549 seconds time elapsed
+
+# started on Tue Feb 11 00:56:10 2020
+
+
+ Performance counter stats for './h264dec -i ./park_joy_2160p.h264 -t 2':
+
+   292,605,860,425      cpu-cycles                                                  
+   498,673,918,350      instructions              #    1.70  insn per cycle         
+       251,194,044      r2124                                                       
+       851,697,903      rE124                                                       
+
+      37.136846110 seconds time elapsed
+
+=== test run with 4 threads ===
+# started on Tue Feb 11 00:56:49 2020
+
+
+ Performance counter stats for './h264dec -i ./park_joy_2160p.h264 -t 4':
+
+   206,043,481,354      L1-dcache-loads                                             
+     1,816,292,078      L1-dcache-load-misses     #    0.88% of all L1-dcache hits  
+       305,700,842      LLC-loads                                                   
+       176,195,035      LLC-load-misses           #   57.64% of all LL-cache hits   
+
+      21.145074100 seconds time elapsed
+
+# started on Tue Feb 11 00:57:13 2020
+
+
+ Performance counter stats for './h264dec -i ./park_joy_2160p.h264 -t 4':
+
+   305,710,443,960      cpu-cycles                                                  
+   520,762,611,910      instructions              #    1.70  insn per cycle         
+       303,410,395      r2124                                                       
+       867,620,597      rE124                                                       
+
+      21.184062325 seconds time elapsed
+
+=== test run with 8 threads ===
+# started on Tue Feb 11 00:57:36 2020
+
+
+ Performance counter stats for './h264dec -i ./park_joy_2160p.h264 -t 8':
+
+   207,132,629,428      L1-dcache-loads                                             
+     1,827,113,717      L1-dcache-load-misses     #    0.88% of all L1-dcache hits  
+       313,725,224      LLC-loads                                                   
+       172,831,101      LLC-load-misses           #   55.09% of all LL-cache hits   
+
+      10.406413245 seconds time elapsed
+
+# started on Tue Feb 11 00:57:48 2020
+
+
+ Performance counter stats for './h264dec -i ./park_joy_2160p.h264 -t 8':
+
+   308,491,950,892      cpu-cycles                                                  
+   524,033,475,725      instructions              #    1.70  insn per cycle         
+       312,056,537      r2124                                                       
+       870,710,327      rE124                                                       
+
+      10.429111774 seconds time elapsed
+
+Running with Hyperthreading
+=== test run with 2 threads ===
+# started on Tue Feb 11 00:58:01 2020
+
+
+ Performance counter stats for './h264dec -i ./park_joy_2160p.h264 -t 2':
+
+   193,244,339,175      L1-dcache-loads                                             
+     2,740,270,084      L1-dcache-load-misses     #    1.42% of all L1-dcache hits  
+       233,669,379      LLC-loads                                                   
+       195,463,544      LLC-load-misses           #   83.65% of all LL-cache hits   
+
+      52.588881382 seconds time elapsed
+
+# started on Tue Feb 11 00:58:55 2020
+
+
+ Performance counter stats for './h264dec -i ./park_joy_2160p.h264 -t 2':
+
+   423,984,629,302      cpu-cycles                                                  
+   499,813,507,428      instructions              #    1.18  insn per cycle         
+       232,274,530      r2124                                                       
+     1,517,778,907      rE124                                                       
+
+      52.475425247 seconds time elapsed
+
+=== test run with 4 threads ===
+# started on Tue Feb 11 00:59:50 2020
+
+
+ Performance counter stats for './h264dec -i ./park_joy_2160p.h264 -t 4':
+
+   200,642,567,515      L1-dcache-loads                                             
+     2,834,773,823      L1-dcache-load-misses     #    1.41% of all L1-dcache hits  
+       267,580,602      LLC-loads                                                   
+       189,404,756      LLC-load-misses           #   70.78% of all LL-cache hits   
+
+      28.271163628 seconds time elapsed
+
+# started on Tue Feb 11 01:00:21 2020
+
+
+ Performance counter stats for './h264dec -i ./park_joy_2160p.h264 -t 4':
+
+   432,896,744,816      cpu-cycles                                                  
+   511,808,629,531      instructions              #    1.18  insn per cycle         
+       266,459,897      r2124                                                       
+     1,550,832,949      rE124                                                       
+
+      28.223526307 seconds time elapsed
+
+=== test run with 8 threads ===
+# started on Tue Feb 11 01:00:52 2020
+
+
+ Performance counter stats for './h264dec -i ./park_joy_2160p.h264 -t 8':
+
+   203,813,740,094      L1-dcache-loads                                             
+     2,877,237,052      L1-dcache-load-misses     #    1.41% of all L1-dcache hits  
+       291,857,544      LLC-loads                                                   
+       182,250,847      LLC-load-misses           #   62.45% of all LL-cache hits   
+
+      14.434354424 seconds time elapsed
+
+# started on Tue Feb 11 01:01:09 2020
+
+
+ Performance counter stats for './h264dec -i ./park_joy_2160p.h264 -t 8':
+
+   440,940,311,633      cpu-cycles                                                  
+   515,449,292,385      instructions              #    1.17  insn per cycle         
+       291,641,394      r2124                                                       
+     1,572,195,138      rE124                                                       
+
+      14.440320853 seconds time elapsed
+
+=== test run with 16 threads ===
+# started on Tue Feb 11 01:01:27 2020
+
+
+ Performance counter stats for './h264dec -i ./park_joy_2160p.h264 -t 16':
+
+   201,489,618,796      L1-dcache-loads                                             
+     2,929,378,583      L1-dcache-load-misses     #    1.45% of all L1-dcache hits  
+       316,696,073      LLC-loads                                                   
+       178,535,452      LLC-load-misses           #   56.37% of all LL-cache hits   
+
+       7.327588543 seconds time elapsed
+
+# started on Tue Feb 11 01:01:37 2020
+
+
+ Performance counter stats for './h264dec -i ./park_joy_2160p.h264 -t 16':
+
+   445,346,340,899      cpu-cycles                                                  
+   513,372,117,036      instructions              #    1.15  insn per cycle         
+       316,158,671      r2124                                                       
+     1,595,851,649      rE124                                                       
+
+       7.325610775 seconds time elapsed
+
+Iteration no: 2
+Running without Hyperthreading
+=== test run with 1 threads ===
+# started on Tue Feb 11 01:01:47 2020
+
+
+ Performance counter stats for './h264dec -i ./park_joy_2160p.h264 -t 1':
+
+   188,888,653,273      L1-dcache-loads                                             
+     1,714,375,343      L1-dcache-load-misses     #    0.91% of all L1-dcache hits  
+       207,836,684      LLC-loads                                                   
+       170,806,870      LLC-load-misses           #   82.18% of all LL-cache hits   
+
+      69.407814998 seconds time elapsed
+
+# started on Tue Feb 11 01:02:58 2020
+
+
+ Performance counter stats for './h264dec -i ./park_joy_2160p.h264 -t 1':
+
+   282,634,727,047      cpu-cycles                                                  
+   492,912,837,512      instructions              #    1.74  insn per cycle         
+       206,835,673      r2124                                                       
+       836,642,402      rE124                                                       
+
+      69.283094044 seconds time elapsed
+
+=== test run with 2 threads ===
+# started on Tue Feb 11 01:04:09 2020
+
+
+ Performance counter stats for './h264dec -i ./park_joy_2160p.h264 -t 2':
+
+   192,071,426,212      L1-dcache-loads                                             
+     1,763,458,909      L1-dcache-load-misses     #    0.92% of all L1-dcache hits  
+       253,058,453      LLC-loads                                                   
+       177,579,458      LLC-load-misses           #   70.17% of all LL-cache hits   
+
+      37.112324027 seconds time elapsed
+
+# started on Tue Feb 11 01:04:50 2020
+
+
+ Performance counter stats for './h264dec -i ./park_joy_2160p.h264 -t 2':
+
+   292,468,643,789      cpu-cycles                                                  
+   498,579,487,454      instructions              #    1.70  insn per cycle         
+       251,543,092      r2124                                                       
+       853,307,391      rE124                                                       
+
+      37.132874810 seconds time elapsed
+
+=== test run with 4 threads ===
+# started on Tue Feb 11 01:05:29 2020
+
+
+ Performance counter stats for './h264dec -i ./park_joy_2160p.h264 -t 4':
+
+   205,392,302,290      L1-dcache-loads                                             
+     1,816,532,627      L1-dcache-load-misses     #    0.88% of all L1-dcache hits  
+       304,590,221      LLC-loads                                                   
+       175,855,824      LLC-load-misses           #   57.74% of all LL-cache hits   
+
+      21.097639334 seconds time elapsed
+
+# started on Tue Feb 11 01:05:52 2020
+
+
+ Performance counter stats for './h264dec -i ./park_joy_2160p.h264 -t 4':
+
+   306,038,081,599      cpu-cycles                                                  
+   522,407,760,871      instructions              #    1.71  insn per cycle         
+       303,827,705      r2124                                                       
+       870,097,709      rE124                                                       
+
+      21.248817694 seconds time elapsed
+
+=== test run with 8 threads ===
+# started on Tue Feb 11 01:06:15 2020
+
+
+ Performance counter stats for './h264dec -i ./park_joy_2160p.h264 -t 8':
+
+   204,550,416,827      L1-dcache-loads                                             
+     1,826,653,911      L1-dcache-load-misses     #    0.89% of all L1-dcache hits  
+       313,282,278      LLC-loads                                                   
+       172,326,247      LLC-load-misses           #   55.01% of all LL-cache hits   
+
+      10.345560081 seconds time elapsed
+
+# started on Tue Feb 11 01:06:28 2020
+
+
+ Performance counter stats for './h264dec -i ./park_joy_2160p.h264 -t 8':
+
+   306,096,372,638      cpu-cycles                                                  
+   517,582,496,134      instructions              #    1.69  insn per cycle         
+       311,286,063      r2124                                                       
+       870,236,092      rE124                                                       
+
+      10.348180161 seconds time elapsed
+
+Running with Hyperthreading
+=== test run with 2 threads ===
+# started on Tue Feb 11 01:06:40 2020
+
+
+ Performance counter stats for './h264dec -i ./park_joy_2160p.h264 -t 2':
+
+   193,157,213,564      L1-dcache-loads                                             
+     2,738,502,463      L1-dcache-load-misses     #    1.42% of all L1-dcache hits  
+       233,691,679      LLC-loads                                                   
+       194,424,155      LLC-load-misses           #   83.20% of all LL-cache hits   
+
+      52.427506912 seconds time elapsed
+
+# started on Tue Feb 11 01:07:34 2020
+
+
+ Performance counter stats for './h264dec -i ./park_joy_2160p.h264 -t 2':
+
+   423,593,035,216      cpu-cycles                                                  
+   499,759,789,584      instructions              #    1.18  insn per cycle         
+       232,362,477      r2124                                                       
+     1,514,611,959      rE124                                                       
+
+      52.451513824 seconds time elapsed
+
+=== test run with 4 threads ===
+# started on Tue Feb 11 01:08:30 2020
+
+
+ Performance counter stats for './h264dec -i ./park_joy_2160p.h264 -t 4':
+
+   201,724,070,808      L1-dcache-loads                                             
+     2,838,648,580      L1-dcache-load-misses     #    1.41% of all L1-dcache hits  
+       267,738,771      LLC-loads                                                   
+       189,261,705      LLC-load-misses           #   70.69% of all LL-cache hits   
+
+      28.290119422 seconds time elapsed
+
+# started on Tue Feb 11 01:09:00 2020
+
+
+ Performance counter stats for './h264dec -i ./park_joy_2160p.h264 -t 4':
+
+   434,481,971,799      cpu-cycles                                                  
+   514,499,225,491      instructions              #    1.18  insn per cycle         
+       267,672,242      r2124                                                       
+     1,548,652,253      rE124                                                       
+
+      28.362547466 seconds time elapsed
+
+=== test run with 8 threads ===
+# started on Tue Feb 11 01:09:31 2020
+
+
+ Performance counter stats for './h264dec -i ./park_joy_2160p.h264 -t 8':
+
+   202,419,992,058      L1-dcache-loads                                             
+     2,885,161,046      L1-dcache-load-misses     #    1.43% of all L1-dcache hits  
+       296,697,977      LLC-loads                                                   
+       182,528,539      LLC-load-misses           #   61.52% of all LL-cache hits   
+
+      14.361172464 seconds time elapsed
+
+# started on Tue Feb 11 01:09:48 2020
+
+
+ Performance counter stats for './h264dec -i ./park_joy_2160p.h264 -t 8':
+
+   439,744,457,725      cpu-cycles                                                  
+   513,504,340,168      instructions              #    1.17  insn per cycle         
+       290,987,874      r2124                                                       
+     1,569,483,230      rE124                                                       
+
+      14.409646139 seconds time elapsed
+
+=== test run with 16 threads ===
+# started on Tue Feb 11 01:10:05 2020
+
+
+ Performance counter stats for './h264dec -i ./park_joy_2160p.h264 -t 16':
+
+   202,065,795,889      L1-dcache-loads                                             
+     2,917,837,839      L1-dcache-load-misses     #    1.44% of all L1-dcache hits  
+       307,864,376      LLC-loads                                                   
+       178,055,646      LLC-load-misses           #   57.84% of all LL-cache hits   
+
+       7.285152358 seconds time elapsed
+
+# started on Tue Feb 11 01:10:16 2020
+
+
+ Performance counter stats for './h264dec -i ./park_joy_2160p.h264 -t 16':
+
+   444,830,198,809      cpu-cycles                                                  
+   514,606,090,821      instructions              #    1.16  insn per cycle         
+       305,239,793      r2124                                                       
+     1,582,353,233      rE124                                                       
+
+       7.346363464 seconds time elapsed
+
+Iteration no: 3
+Running without Hyperthreading
+=== test run with 1 threads ===
+# started on Tue Feb 11 01:10:25 2020
+
+
+ Performance counter stats for './h264dec -i ./park_joy_2160p.h264 -t 1':
+
+   188,888,810,717      L1-dcache-loads                                             
+     1,719,089,221      L1-dcache-load-misses     #    0.91% of all L1-dcache hits  
+       208,327,731      LLC-loads                                                   
+       171,069,392      LLC-load-misses           #   82.12% of all LL-cache hits   
+
+      69.317453648 seconds time elapsed
+
+# started on Tue Feb 11 01:11:37 2020
+
+
+ Performance counter stats for './h264dec -i ./park_joy_2160p.h264 -t 1':
+
+   282,568,350,793      cpu-cycles                                                  
+   492,913,857,554      instructions              #    1.74  insn per cycle         
+       206,458,564      r2124                                                       
+       837,265,947      rE124                                                       
+
+      69.287473797 seconds time elapsed
+
+=== test run with 2 threads ===
+# started on Tue Feb 11 01:12:50 2020
+
+
+ Performance counter stats for './h264dec -i ./park_joy_2160p.h264 -t 2':
+
+   192,487,510,216      L1-dcache-loads                                             
+     1,764,008,608      L1-dcache-load-misses     #    0.92% of all L1-dcache hits  
+       253,423,484      LLC-loads                                                   
+       177,859,664      LLC-load-misses           #   70.18% of all LL-cache hits   
+
+      37.210839351 seconds time elapsed
+
+# started on Tue Feb 11 01:13:30 2020
+
+
+ Performance counter stats for './h264dec -i ./park_joy_2160p.h264 -t 2':
+
+   292,349,113,042      cpu-cycles                                                  
+   497,897,419,805      instructions              #    1.70  insn per cycle         
+       251,078,355      r2124                                                       
+       850,560,869      rE124                                                       
+
+      37.089458315 seconds time elapsed
+
+=== test run with 4 threads ===
+# started on Tue Feb 11 01:14:09 2020
+
+
+ Performance counter stats for './h264dec -i ./park_joy_2160p.h264 -t 4':
+
+   204,520,914,280      L1-dcache-loads                                             
+     1,815,882,577      L1-dcache-load-misses     #    0.89% of all L1-dcache hits  
+       304,706,283      LLC-loads                                                   
+       175,819,007      LLC-load-misses           #   57.70% of all LL-cache hits   
+
+      21.067022998 seconds time elapsed
+
+# started on Tue Feb 11 01:14:33 2020
+
+
+ Performance counter stats for './h264dec -i ./park_joy_2160p.h264 -t 4':
+
+   304,080,715,611      cpu-cycles                                                  
+   517,182,404,828      instructions              #    1.70  insn per cycle         
+       302,765,197      r2124                                                       
+       868,612,293      rE124                                                       
+
+      21.033381955 seconds time elapsed
+
+=== test run with 8 threads ===
+# started on Tue Feb 11 01:14:56 2020
+
+
+ Performance counter stats for './h264dec -i ./park_joy_2160p.h264 -t 8':
+
+   204,900,518,963      L1-dcache-loads                                             
+     1,827,869,681      L1-dcache-load-misses     #    0.89% of all L1-dcache hits  
+       313,643,111      LLC-loads                                                   
+       173,029,339      LLC-load-misses           #   55.17% of all LL-cache hits   
+
+      10.375232314 seconds time elapsed
+
+# started on Tue Feb 11 01:15:08 2020
+
+
+ Performance counter stats for './h264dec -i ./park_joy_2160p.h264 -t 8':
+
+   306,965,551,265      cpu-cycles                                                  
+   517,828,114,928      instructions              #    1.69  insn per cycle         
+       311,818,330      r2124                                                       
+       871,771,123      rE124                                                       
+
+      10.342177819 seconds time elapsed
+
+Running with Hyperthreading
+=== test run with 2 threads ===
+# started on Tue Feb 11 01:15:21 2020
+
+
+ Performance counter stats for './h264dec -i ./park_joy_2160p.h264 -t 2':
+
+   193,233,726,678      L1-dcache-loads                                             
+     2,738,781,122      L1-dcache-load-misses     #    1.42% of all L1-dcache hits  
+       233,523,089      LLC-loads                                                   
+       194,472,002      LLC-load-misses           #   83.28% of all LL-cache hits   
+
+      52.539340781 seconds time elapsed
+
+# started on Tue Feb 11 01:16:15 2020
+
+
+ Performance counter stats for './h264dec -i ./park_joy_2160p.h264 -t 2':
+
+   424,222,812,972      cpu-cycles                                                  
+   499,928,687,923      instructions              #    1.18  insn per cycle         
+       232,618,835      r2124                                                       
+     1,513,142,211      rE124                                                       
+
+      52.519872941 seconds time elapsed
+
+=== test run with 4 threads ===
+# started on Tue Feb 11 01:17:10 2020
+
+
+ Performance counter stats for './h264dec -i ./park_joy_2160p.h264 -t 4':
+
+   202,522,099,351      L1-dcache-loads                                             
+     2,833,850,427      L1-dcache-load-misses     #    1.40% of all L1-dcache hits  
+       266,921,947      LLC-loads                                                   
+       189,648,252      LLC-load-misses           #   71.05% of all LL-cache hits   
+
+      28.333569104 seconds time elapsed
+
+# started on Tue Feb 11 01:17:40 2020
+
+
+ Performance counter stats for './h264dec -i ./park_joy_2160p.h264 -t 4':
+
+   432,902,810,894      cpu-cycles                                                  
+   511,412,459,331      instructions              #    1.18  insn per cycle         
+       266,926,666      r2124                                                       
+     1,548,227,161      rE124                                                       
+
+      28.287234921 seconds time elapsed
+
+=== test run with 8 threads ===
+# started on Tue Feb 11 01:18:11 2020
+
+
+ Performance counter stats for './h264dec -i ./park_joy_2160p.h264 -t 8':
+
+   201,524,531,794      L1-dcache-loads                                             
+     2,882,605,491      L1-dcache-load-misses     #    1.43% of all L1-dcache hits  
+       291,512,586      LLC-loads                                                   
+       182,211,386      LLC-load-misses           #   62.51% of all LL-cache hits   
+
+      14.405217014 seconds time elapsed
+
+# started on Tue Feb 11 01:18:29 2020
+
+
+ Performance counter stats for './h264dec -i ./park_joy_2160p.h264 -t 8':
+
+   439,472,004,507      cpu-cycles                                                  
+   514,008,382,687      instructions              #    1.17  insn per cycle         
+       293,198,345      r2124                                                       
+     1,569,847,392      rE124                                                       
+
+      14.360771217 seconds time elapsed
+
+=== test run with 16 threads ===
+# started on Tue Feb 11 01:18:47 2020
+
+
+ Performance counter stats for './h264dec -i ./park_joy_2160p.h264 -t 16':
+
+   200,210,704,191      L1-dcache-loads                                             
+     2,936,351,451      L1-dcache-load-misses     #    1.47% of all L1-dcache hits  
+       314,094,356      LLC-loads                                                   
+       178,727,666      LLC-load-misses           #   56.90% of all LL-cache hits   
+
+       7.292937931 seconds time elapsed
+
+# started on Tue Feb 11 01:18:57 2020
+
+
+ Performance counter stats for './h264dec -i ./park_joy_2160p.h264 -t 16':
+
+   443,576,332,068      cpu-cycles                                                  
+   511,465,115,730      instructions              #    1.15  insn per cycle         
+       312,201,975      r2124                                                       
+     1,590,872,888      rE124                                                       
+
+       7.321394649 seconds time elapsed
+
